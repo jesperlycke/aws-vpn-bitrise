@@ -58,7 +58,7 @@ EOF
     sleep 10s
     ifconfig
     ps aux | grep openvpn
-    cat /run/openvpn/status
+    cat /run/openvpn/client.status
     echo "After sleep"
     if ! ifconfig | grep tun0 > /dev/null ; then
       echo "No open VPN tunnel found"
