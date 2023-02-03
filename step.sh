@@ -51,7 +51,7 @@ EOF
     echo "Before sleep"
     sleep 10s
     ifconfig
-    cat /var/log/openvpn
+    ls -l /var/log/openvpn
     echo "After sleep"
     if ! ifconfig | grep tun0 > /dev/null ; then
       echo "No open VPN tunnel found"
