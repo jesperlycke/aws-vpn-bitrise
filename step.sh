@@ -45,12 +45,12 @@ EOF
       service openvpn start client 
     echo "Done"
     echo ""
+    ifconfig
 
     echo "Check status"
     echo "Before sleep"
     sleep 10s
     echo "After sleep"
-    ifconfig
     if ! ifconfig | grep tun0 > /dev/null ; then
       echo "No open VPN tunnel found"
       cat "$log_path"
