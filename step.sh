@@ -50,7 +50,7 @@ EOF
     echo "Before sleep"
     sleep 5s
     echo "After sleep"
-    echo ifconfig
+    ifconfig
     if ! ifconfig | grep tun0 > /dev/null ; then
       echo "No open VPN tunnel found"
       cat "$log_path"
