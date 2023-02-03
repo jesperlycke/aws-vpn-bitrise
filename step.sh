@@ -55,7 +55,7 @@ EOF
 
     echo "Check status"
     echo "Before sleep"
-    sleep 10s
+    sleep 2m
     ifconfig
     ps aux | grep openvpn
     cat /run/openvpn/client.status
