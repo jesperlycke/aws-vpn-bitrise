@@ -47,7 +47,9 @@ EOF
     echo ""
 
     echo "Check status"
+    echo "Before sleep"
     sleep 5
+    echo "After sleep"
     echo ifconfig
     if ! ifconfig | grep tun0 > /dev/null ; then
       echo "No open VPN tunnel found"
