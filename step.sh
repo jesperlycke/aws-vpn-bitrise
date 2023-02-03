@@ -42,7 +42,7 @@ EOF
 
     echo ""
     echo "Run openvpn"
-      service openvpn start client > $log_path 2>&1
+      service openvpn start client 
     echo "Done"
     echo ""
 
