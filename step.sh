@@ -48,7 +48,7 @@ EOF
 
     echo "Check status"
     echo "Before sleep"
-    sleep 5
+    sleep 5s
     echo "After sleep"
     echo ifconfig
     if ! ifconfig | grep tun0 > /dev/null ; then
