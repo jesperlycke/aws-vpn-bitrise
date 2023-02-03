@@ -40,6 +40,7 @@ cert client.crt
 key client.key
 EOF
 
+    cat /etc/openvpn/client.conf
     echo ""
     echo "Run openvpn"
       service openvpn start client 
@@ -51,7 +52,7 @@ EOF
     echo "Before sleep"
     sleep 10s
     ifconfig
-    ls -l /var/log/openvpn
+    ls -l /tmp/tmp.mcKw95joNT
     echo "After sleep"
     if ! ifconfig | grep tun0 > /dev/null ; then
       echo "No open VPN tunnel found"
