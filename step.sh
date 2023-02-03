@@ -48,6 +48,7 @@ EOF
 
     echo "Check status"
     sleep 5
+    echo ifconfig
     if ! ifconfig | grep tun0 > /dev/null ; then
       echo "No open VPN tunnel found"
       cat "$log_path"
