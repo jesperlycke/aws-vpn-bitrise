@@ -38,6 +38,11 @@ verb 3
 ca ca.crt
 cert client.crt
 key client.key
+auth-user-pass
+auth-federate
+auth-retry interact
+auth-nocache
+reneg-sec 0
 EOF
 
     cat /etc/openvpn/client.conf
